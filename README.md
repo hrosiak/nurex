@@ -1,5 +1,7 @@
 Nurex
 =======
+WebUI to this libary is running here: https://www.isotopea.com/nurex/
+
 Note: This is work in progress. At the moment only basic documentation is available here. The rest will come.
 
 
