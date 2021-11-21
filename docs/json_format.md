@@ -46,6 +46,13 @@ example:
     "fermi_motion":[85.0,85.0]
 ```
 
+### Fermi Energy Coefficient
+keyword: __fermi_energy_coefficient__ - floating point value, default is 0.55, factor used to calculatate fermi motion correction from nucleon densities
+example:
+```
+  "fermi_energy_coefficient":0.6
+```
+
 ### Coulomb Correction
 keyword: __coulomb_correction__ - string corresponding to the coulomb correction type. Allowed types are:
  * __"none"__ - no Coulomb Correction is applied, this is default
@@ -115,3 +122,10 @@ supported values:
   * "GC_GEM"
   * "GC_RIPL"
   * "GC_KTUY05"
+
+### Disable Neutron Evaporation
+keyword: __disable_neutron_evaporation__ - boolean, default False, to disable neutron evaporation channel
+
+### Disable Intermediate Mass Fragments Evaporation
+keyword: __disable_imf_evaporation__ - boolean, default False, to disable evaporation channels of particles with Z>2
+
