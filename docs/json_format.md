@@ -40,7 +40,7 @@ example:
 ```
 
 ### Fermi Motion Correction
-keyword: __fermi_correction__ - array of 2 numerical values corresponding to the mean momentum correction in MeV/c. Defaults is [90,90]
+keyword: __fermi_motion__ - array of 2 numerical values corresponding to the mean momentum correction in MeV/c. Defaults is [90,90]
 example:
 ```
     "fermi_motion":[85.0,85.0]
