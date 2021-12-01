@@ -115,6 +115,10 @@ gm = make_model(model_config)
 ## Evaporation Parameters
 ### Emax
 keyword: __excitation_energy__ - numerical value for the maximum excitation energy per hole in evaporation process. By default it is calculated from the provided neutron density.
+Example:
+```python
+"excitation_energy": 40
+```
 
 ### Level Densities
 keyword: __level_density__ - string corresponding to the level density model
@@ -122,6 +126,13 @@ supported values:
   * "GC_GEM"
   * "GC_RIPL"
   * "GC_KTUY05"
+
+### Neutron Removal Scaling
+keyword: __n_removal_scaling__ - numerical value to scale calculated neutron removal cross sections. Can be usefull to adjust neutron removal cross section in evaporation corrections.
+Example:
+```python
+"n_removal_scaling":0.75
+```
 
 ### Disable Neutron Evaporation
 keyword: __disable_neutron_evaporation__ - boolean, default False, to disable neutron evaporation channel
