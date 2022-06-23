@@ -80,6 +80,7 @@ The following density types are recognized:
   * "ho" - Harmonic Oscillator type - parameters keyword is array of 2 numbers
   * "fermi" - 4 parameter fermi function - parameters keyword is array of 3 numbers, if array of 2 the 3rd parameter is set to 0.0
   * "dirac" - Dirac function - function is normalized
+  * "gaussian" - Gaussian function - parameters is array of 1 number - width parameter
   * "table" - parameters is array of tabulated values of radius and density in format [[r0, rho0],[r2, rho1],...,[rn, rhon]] 
 
 Example:
