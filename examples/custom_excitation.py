@@ -60,7 +60,7 @@ for i in range(1,5):
 sigma_custom = gm.sigma_cc(1000)
 print(f"CC sigma_custom = {sigma_custom}")
 
-## this is example how to print and cross check 
+## this is example how to print and cross check current custom excitation function
 energies = np.linspace(0,50,500)
 w1 = [nurex.custom_excitation_w(energy=e, i=1) for e in energies]
 w2 = [nurex.custom_excitation_w(energy=e, i=2) for e in energies]
