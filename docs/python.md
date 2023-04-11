@@ -26,6 +26,18 @@ model_config = {"model":"OLAZR_FM",
 gm = make_model(model_config)
 ```
 
-Python Classes
+How To
 ==============
-TODO
+
+Change model range
+------------------
+
+Following will set range for pp part to 0.39fm and for pn to 0.37fm
+```
+config = {"model":"OLAFR",
+           "projectile":"12c",
+           "target":"12c"}
+gm = nurex.make_model(config)
+gm2.set_range(0.39,0.37)
+```
+

@@ -33,10 +33,14 @@ Examples of valid __model__ strings:
  * OLAZR_FM
 
 ### Range
-keyword: __range__ - numerical value of the range in fm for finite range model.
+keyword: __range__ - numerical value of the range in fm for finite range model. If one values is supplied both pp and pn ranges are set to the value.
+To define pp and pn ranges separately use list of two values. First value is for pp and second value for pn part.
 example:
 ```
     "range":0.39
+```
+```
+    "range":[0.38,0.39]
 ```
 
 ### Fermi Motion Correction
