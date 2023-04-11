@@ -1,4 +1,4 @@
-Nurex
+PyNurex
 =======
 Nuclear Reaction Cross Section calculator.
 Nurex is a library for Glauber Model nuclear reaction caclulation. 
@@ -17,7 +17,7 @@ https://www.isotopea.com/nurex/nurex_v1.6.pdf
 Build and Installation
 ======================
 
-Python nurex modules requires python 3.7+ and is available for Linux via pip:
+Requirements python version 3.7-3.11, OS: __Linux__ and __Windows__ via pip:
 ```
 pip install pynurex
 ```
