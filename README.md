@@ -17,7 +17,7 @@ https://www.isotopea.com/nurex/nurex_v1.6.pdf
 Build and Installation
 ======================
 
-Requirements python version 3.7-3.11, OS: __Linux__ and __Windows__ via pip:
+Requirements python version __3.7-3.11__, OS: __Linux__ and __Windows__ via pip:
 ```
 pip install pynurex
 ```
