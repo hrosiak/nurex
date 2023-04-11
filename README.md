@@ -9,7 +9,7 @@ Note: This is work in progress. At the moment only basic documentation is availa
 WebUI to this libary is running here: https://www.isotopea.com/nurex/
 
 #### Physics Manual
-https://www.isotopea.com/nurex/nurex_v1.6.pdf
+https://www.isotopea.com/nurex/nurex.pdf
 
 
 
