@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "scikit-build-core[pyproject]>=0.2.0",
+    "pybind11",
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "pynurex"
+description = "Python interface to Nurex library"
+version = "1.9.1"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Andrej Prochazka", email = "hrocho@vodacionline.sk"},
+]
+requires-python = ">=3.7"
+
+[tool.scikit-build]
+minimum-version = "0.2.1"
+build-dir = "build/{cache_tag}"
+wheel.packages = ["pymodule/pynurex"]
+cmake.args=["-DPYTHON_MODULE=ON"]
+
+[tool.cibuildwheel]
+before-test = "pip install numpy"
+test-command = "python {project}/tests/test.py"
+test-extras = ["test"]
+build-verbosity = 1

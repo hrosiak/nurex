@@ -1,0 +1,49 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+namespace nurex{
+
+// math and physical constants
+constexpr double PI = 3.1415926535897932384626433832795;
+constexpr double proton_charge_radius = 0.88; //0.84184; // in fm
+constexpr double atomic_mass_unit = 931.4940954; //in MeV/c^2
+constexpr double proton_mass  = 938.2720813;
+constexpr double neutron_mass = 939.5654133;
+constexpr double c = 299.792458; //in Mm/s
+constexpr double hc_transp = c*6.58211928*0.1; //in MeVfm
+constexpr double fine_structure_constant = 1/137.036;
+constexpr double Avogadro = 6.022140857; // 10^23
+
+// numerical settings
+constexpr double max_rrms_factor = 3.5; // upper limit integrations => ie max_rrms_factor*Rrms
+constexpr double MAX_INTEGRATION_RADIUS=10.0*max_rrms_factor;  // maximum radius for density function integrations
+constexpr int max_b_steps=50;             // maximum number of division of impact parameter and radius, used for splines
+constexpr int z_integration_b_steps=100; // number of samples in z-integrated spline
+constexpr int z_range_integration_b_steps=200; // number of samples z-range-integated spline  
+constexpr double max_finite_range_factor =  4.0;
+constexpr double fm_correction_range_factor =  5.0;  
+
+
+// numerical config
+constexpr double fm_integration_precision = 1e-3;
+constexpr double b_integration_precision = 1e-1;
+constexpr double rrms_integration_precision = 1e-3; // absolute precision in fm
+
+// parameters for GL integrators
+constexpr int integration_2d_order = 16;
+constexpr int integration_1d_order = 16;
+
+// the folowing is used at the moment only for GSL integration
+constexpr double twodintegration_precision = 1e-2;
+constexpr double zintegration_precision = 1e-3;
+}
+
+
+#cmakedefine GSL_INTEGRATION
+#cmakedefine GSL_INTERPOLATION
+#cmakedefine USE_THREADS
+#cmakedefine NO_FILESYSTEM
+#cmakedefine CATIMA
+
+#cmakedefine EVAPORATION_BARRIER_PARAMETRIZED
+#endif
