@@ -38,9 +38,9 @@ This can be done sourcing the init.sh file, which is generated in the build dire
 > source init.sh
 
 
-Tutorial
+Manual
 ========
-[Tutorial](docs/tutorial.md)
+[Tutorial](docs/manual.md)
 
 How To
 ======
